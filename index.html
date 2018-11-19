@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Survey Form Project</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+  </header>
+  <div class="main_content">
+    <div class="description">
+      <p id="description">Let us know your opinion about freeCodeCamp certifications:</p>
+    </div>
+    <form id="survey-form" action="#">
+      <fieldset>
+        <legend>Personal Information</legend>
+          <div class="pad_bottom_3 input">
+            <div class="label">
+              <label id="name-label" for="name">*Name:</label>
+            </div>
+            <div class="right_block">
+              <input id="name" type="text" placeholder="Enter your name" required>
+            </div>
+          </div>
+          <div class="pad_bottom_3 input">
+            <div class="label">
+              <label id="email-label" for="email">*Email:</label>
+            </div>
+            <div class="right_block">
+              <input id="email" type="email" placeholder="Enter your email" required>
+            </div>
+          </div>
+          <div class="pad_bottom_3 input">
+            <div class="label">
+              <label id="number-label" for="number">*Age:</label>
+            </div>
+            <div class="right_block">
+              <input id="number" type="number" min="14" max="110" placeholder="Enter your age" required>
+            </div>
+          </div>
+          <div class="input">
+            <div class="label">
+              <label for="dropdown">*Your experience with coding:</label>
+            </div>
+            <div class="right_block">
+              <select name="experience" id="dropdown">
+                <optgroup>
+                  <option value="">--Please choose an option--</option>
+                  <option value="first_experience">First experience</option>
+                  <option value="some_experience">Some experience</option>
+                  <option value="experienced"> Experienced</option>
+                </optgroup>
+              </select>
+            </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>User progress and opinion</legend>
+          <div class="mg_bottom_10">
+            <div class="label prog_label input">
+              <p>Lessons already studied:</p>
+            </div>
+            <div class="right_block right_block_1">
+              <div class="options">
+                <label for="lesson_1" class="pad_bottom_3">
+                  <input id="lesson_1" type="checkbox" name="lesson_1" value="Web Design">Responsive Web Design certifications
+                </label>
+                <label for="lesson_2" class="pad_bottom_3">
+                  <input id="lesson_2" type="checkbox" name="lesson_2" value="Javascript Algorithms">Javascript Algorithms And Data Structures Certification
+                </label>
+                <label for="lesson_3" class="pad_bottom_3">
+                  <input id="lesson_3" type="checkbox" name="lesson_3" value="Front-End Libraries">Front-End Libraries Certification
+                </label>
+                <label for="lesson_4" class="pad_bottom_3">
+                  <input id="lesson_5" type="checkbox" name="lesson_4" value="Data Visualization">Data Visualization Certification
+                </label>
+                <label for="lesson_5" class="pad_bottom_3">
+                  <input id="lesson_5" type="checkbox" name="lesson_5" value="Apis and Microservices">Apis and Microservices Certification
+                </label>
+                <label for="lesson_6" class="pad_bottom_3">
+                  <input id="lesson_6" type="checkbox" name="lesson_6" value="Coding Interview">Coding Interview Prep
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="mg_bottom_5">
+            <div class="label prog_label input">
+              <p>Do you like the lessons?</p>
+            </div>
+            <div class="right_block right_block_1">
+              <div class="radios">
+                <label for="not_so_much" class="radio_lab">Not so much<br />
+                  <input id="not_so much" type="radio" name="opinion_1" value="not_so_much">
+                </label>
+                <label for="enough" class="radio_lab">Enough<br />
+                  <input id="enough" type="radio" name="opinion_1" value="enough">
+                </label>
+                <label for="very_much" class="radio_lab">Very much<br />
+                  <input id="very_much" type="radio" name="opinion_1" value="very_much">
+                </label>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="label prog_label input">
+              <p>Suggeriresti questo corso a un amico?</p>
+            </div>
+            <div class="right_block right_block_1">
+              <div class="radios">
+                <label for="no" class="radio_lab">No<br />
+                  <input id="no" type="radio" name="opinion_2" value="No">
+                </label>
+                <label for="dont_know" class="radio_lab">I don't know<br />
+                  <input id="dont_know" type="radio" name="opinion_2" value="dont_know">
+                </label>
+                <label for="yes" class="radio_lab">Yes<br />
+                  <input id="yes" type="radio" name="opinion_2" value="yes">
+                </label>
+              </div>
+            </div>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>Suggestions</legend>
+        <div class="description description_1">
+          <p>Do you have any comment?</p>
+        </div>
+        <textarea name="suggestions" id="suggestions" cols="30" rows="20" placeholder="Enter here your comments"></textarea>
+      </fieldset>
+      <button id="submit" class="mg_bottom_5" type="submit">
+        SUBMIT
+      </button>
+    </form>
+  </div>
+  <footer>
+    <p>SURVEY FORM @ 2018 - Manuele Onofri</p>
+  </footer>
+</body>
+</html>
